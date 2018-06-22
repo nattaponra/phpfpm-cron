@@ -12,8 +12,8 @@ docker pull nattaponra/phpfpm-cron:7.1
         container_name: php-cron
         image: nattaponra/phpfpm-cron:7.1
         volumes:
-            - ./www:/app
-            - ./app.cron:/app/cron/app.cron
+            - ${PWD}/www:/app
+            - ${PWD}/app.cron:/app/cron/app.cron
 ```
 ## Example app.cron file
 
