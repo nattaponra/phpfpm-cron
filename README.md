@@ -1,8 +1,5 @@
 # phpfpm-cron
-
-```console
-docker pull nattaponra/phpfpm-cron:7.1
-```
+ 
 
 ## Using by docker compose file.
 ```yml
@@ -10,7 +7,7 @@ docker pull nattaponra/phpfpm-cron:7.1
     
     php-cron:
         container_name: php-cron
-        image: nattaponra/phpfpm-cron:7.1
+        build ./
         volumes:
             - ${PWD}/www:/app
             - ${PWD}/app.cron:/app/crontab/app.cron
